@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RLY_NombreMateria_AdapterMateriaAdministrador"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DML_AltoCabezalFragPpal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/LNY_InformacionMateria_AdapterMateriaAdministrador"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/TXV_NombreMateria_AdapterMateriaAdministrador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TXV_DescripcionMateria_AdapterMateriaAdministrador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TXV_NombreTema_AdapterTemasAdministrador"
+                    android:layout_gravity="left|center_vertical" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LNY_Opciones_AdapterMateriaAdministrador"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_toRightOf="@+id/LNY_InformacionMateria_AdapterMateriaAdministradorr"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/IMB_Opciones_AdapterMateriaAdministrador"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

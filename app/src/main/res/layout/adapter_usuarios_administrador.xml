@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:src="@drawable/esquinas_redondas"
+    android:gravity="center">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CRV_ListarUsuarios_UsuariosAdapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/esquinas_redondas"
+            android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DML_AltoCabezalFragPpal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/LNY_Imagen_Perfil_UsuariosAdapter"
+                android:layout_width="wrap_content"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/IMV_Imagen_Usuario_UsuariosAdapter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LNY_Nombre_Usuario_UsuariosAdapter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:layout_toRightOf="@+id/LNY_Imagen_Perfil_UsuariosAdapter"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true">
+
+                    <TextView
+                        android:id="@+id/TXV_Nombre_Usuario_UsuariosAdapter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="sakdfjsadjf"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TXV_Nombre_Completo_UsuariosAdapter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TXV_Nombre_Usuario_UsuariosAdapter"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="@string/hola_jhon" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LNY_Opciones_UsuariosAdapter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+
+                android:layout_toRightOf="@+id/LNY_Nombre_Usuario_UsuariosAdapter"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/IMB_Opciones_UsuariosAdapter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

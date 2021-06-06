@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ITM_EliminarNoticia_Principal"
+        android:orderInCategory="100"
+        android:title="Eliminar Noticia" />
+
+    <item
+        android:id="@+id/ITM_EditarNoticia_Principal"
+        android:orderInCategory="101"
+        android:title="Editar Noticia"/>
+
+    <item
+        android:id="@+id/ITM_ReportarNoticia_Principal"
+        android:orderInCategory="101"
+        android:title="Reportar Noticia"/>
+</menu>

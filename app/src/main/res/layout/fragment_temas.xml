@@ -1,0 +1,15 @@
+<android.support.v4.widget.SwipeRefreshLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SWP_Temas"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.asus.retamev2.temas">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RCV_ListarTemas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/text_margin"
+        />
+
+</android.support.v4.widget.SwipeRefreshLayout>

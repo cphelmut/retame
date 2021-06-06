@@ -1,0 +1,72 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--Cardview-->
+    <dimen name="DML_EsqunasCardview">3dp</dimen>
+    <dimen name="DML_BordeCardView">1dp</dimen>
+    <!-- Adapter Noticias Principal-->
+    <dimen name="DML_MargenFragPpal">20dp</dimen>
+    <dimen name="DML_AltoCabezalFragPpal">72dp</dimen>
+    <dimen name="DML_AltoLargoImagenLikeFragPpal">50dp</dimen>
+    <dimen name="DML_AltoMathViewFragPpal">120dp</dimen>
+    <dimen name="DML_NombreNoticiaHeighFragPpal">15dp</dimen>
+    <dimen name="DML_PaddingFragPpal">15dp</dimen>
+    <dimen name="DML_PaddingTopFragPpal">13dp</dimen>
+    <dimen name="DML_PaddingBottomFragPpal">5dp</dimen>
+    <dimen name="DML_PaddingTopMathViewFragPpal">10dp</dimen>
+
+
+    <!--Activity cargar Informacion Temas-->
+    <dimen name="DML_MargenATVCargarOtros">15dp</dimen>
+
+    <!--Adapter Cargar Ejercicios -->
+
+    <dimen name="DML_NombreNoticiaTexto_AdapterCargarEjercicios">30dp</dimen>
+    <dimen name="DML_DescripcionTexto_AdapterCargarEjercicios">25dp</dimen>
+    <dimen name="DML_MargenGustar_AdapterCargarEjercicios">15dp</dimen>
+    <dimen name="DML_MargenNombreNoticia_AdapterCargarEjercicios">20dp</dimen>
+    <dimen name="DML_MargenDescripcion_AdapterCargarEjercicios">20dp</dimen>
+
+
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+
+
+    <!--<dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">190dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>-->
+    <dimen name="tvx_Nommbre_Usuario">100dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="info_profile">10dp</dimen>
+
+
+    <dimen name="tamaniofotoperfil_frgperfil">120dp</dimen>
+    <dimen name="margenfotoperfil_frgperfil">30dp</dimen>
+    <dimen name="tamaniorelativefotoperfil_frgperfil">220dp</dimen>
+
+
+    <dimen name="item_offset">10dp</dimen>
+    <dimen name="detail_backdrop_height">250dp</dimen>
+    <dimen name="backdrop_title">30dp</dimen>
+    <dimen name="backdrop_subtitle">18dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_album_radius">0dp</dimen>
+    <dimen name="album_cover_height">160dp</dimen>
+    <dimen name="album_title_padding">10dp</dimen>
+    <dimen name="album_title">15dp</dimen>
+    <dimen name="songs_count_padding_bottom">5dp</dimen>
+    <dimen name="songs_count">12dp</dimen>
+    <dimen name="ic_album_overflow_width">20dp</dimen>
+    <dimen name="ic_album_overflow_height">30dp</dimen>
+    <dimen name="ic_album_overflow_margin_top">10dp</dimen>
+</resources>

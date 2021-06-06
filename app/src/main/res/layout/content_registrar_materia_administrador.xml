@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.asus.retamev2.registrarMateriaAdministrador"
+    tools:showIn="@layout/activity_registrar_materia_administrador">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/LNY_InformacionMateria_ATVRegistrarMateriaAdministrador"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/EDT_NombreMateria_ATVRegistrarMateriaAdministrador"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/EDT_DescripcionMateria_ATVRegistrarMateriaAdministrador"
+                android:layout_width="match_parent"
+                android:layout_below="@id/EDT_NombreTema_ATVRegistrarTemaAdministrador"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LNY_ButtonRegistrarMateria_ATVRegistrarMateriaAdministrador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LNY_InformacionMateria_ATVRegistrarMateriaAdministrador">
+            <Button
+                android:id="@+id/BTN_RegistrarMateria_ATVRegistrarMateriaAdministrador"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Registrar"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

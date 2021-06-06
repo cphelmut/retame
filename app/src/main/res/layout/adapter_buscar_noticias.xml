@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:src="@drawable/esquinas_redondas"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/DML_MargenFragPpal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DML_AltoCabezalFragPpal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:layout_marginLeft="@dimen/DML_MargenFragPpal" android:layout_marginStart="@dimen/DML_MargenFragPpal">
+                <TextView
+                    android:id="@+id/TXV_Nombre_Noticias_BuscarNoticiasAdapter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Text"
+                    android:textSize="@dimen/DML_NombreNoticiaHeighFragPpal"
+                    android:layout_toLeftOf="@+id/imageButton"
+                    android:textStyle="bold"
+                    android:layout_gravity="left|center_vertical" android:layout_toStartOf="@+id/imageButton" />
+                <TextView
+                    android:id="@+id/TXV_Nombre_Tema_BuscarNoticiasAdapter"
+                    android:text="@string/hola_jhon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_below="@+id/TXV_Nombre_Noticias_NoticiasAdapter"/>
+                <TextView
+                    android:id="@+id/TXV_Separacion_BuscarNoticiasAdapter"
+                    android:text="@string/sep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_below="@+id/TXV_Nombre_Noticias_NoticiasAdapter"
+                    android:layout_toRightOf="@+id/TXV_Nombre_Tema_NoticiasAdapter"/>
+
+                <TextView
+                    android:id="@+id/TXV_Nombre_Tipo_BuscarNoticiasAdapter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_below="@+id/TXV_Nombre_Noticias_NoticiasAdapter"
+                    android:layout_toRightOf="@+id/TXV_Separacion_NoticiasAdapter"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TXV_URL_BuscarNoticiasAdapter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:paddingBottom="@dimen/DML_PaddingBottomFragPpal"
+            android:paddingLeft="@dimen/DML_PaddingFragPpal"
+            android:paddingRight="@dimen/DML_PaddingFragPpal"
+            android:textColorLink="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/RLY_Descripcion_BuscarNoticiasAdapter"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/TXV_Descripcion_Noticia_BuscarNoticiasAdapter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/DML_MargenFragPpal"
+                    android:textColor="@color/Text"
+                    android:focusable="false"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--     <io.github.kexanie.library.MathView
+                         android:id="@+id/MTV_Formula_NoticiasAdapter"
+                         android:layout_width="wrap_content"
+                         android:layout_height="120dp"
+                         android:layout_marginRight="20dp">
+                     </io.github.kexanie.library.MathView>-->
+                <ImageView
+                    android:id="@+id/IMV_Imagen_Noticia_BuscarNoticiasAdapter"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="@dimen/DML_MargenFragPpal"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/DML_PaddingFragPpal"
+            android:layout_below ="@+id/LY_Image_Pub_Adapter"
+            android:paddingRight="@dimen/DML_PaddingFragPpal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20">
+                <TextView
+                    android:id="@+id/BTN_AbrirNoticia_BuscarNoticiasAdapter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:text="Ver el tema"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/imageLike_BuscarNoticiasAdapter"
+                android:layout_width="@dimen/DML_AltoLargoImagenLikeFragPpal"
+                android:layout_height="@dimen/DML_AltoLargoImagenLikeFragPpal"
+                android:scaleType="fitCenter">
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+

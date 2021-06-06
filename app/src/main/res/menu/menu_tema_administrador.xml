@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ITM_ModificarTema_TemaAministrador"
+        android:orderInCategory="100"
+        android:title="Modificar Tema" />
+
+    <item
+        android:id="@+id/ITM_CambiarEstadoTema_TemaAministrador"
+        android:orderInCategory="101"
+        android:title="Estado"></item>
+
+</menu>

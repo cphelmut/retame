@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/esquinas_redondas"
+        android:layout_marginTop="@dimen/DML_MargenFragPpal"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DML_AltoCabezalFragPpal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:layout_marginLeft="@dimen/DML_MargenFragPpal">
+                <TextView
+                    android:id="@+id/TXV_Nombre_Noticia_AdapterEjercicios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Text"
+                    android:textSize="@dimen/DML_NombreNoticiaHeighFragPpal"
+                    android:layout_toLeftOf="@+id/imageButton"
+                    android:textStyle="bold"
+                    android:layout_gravity="left|center_vertical" />
+                <TextView
+                    android:id="@+id/TXV_Nombre_Tema_AdapterEjercicios"
+                    android:text="Hola Jhon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_below="@+id/TXV_Nombre_Noticia_AdapterEjercicios"/>
+                <TextView
+                    android:id="@+id/TXV_Separacion_AdapterEjercicios"
+                    android:text="  /  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_below="@+id/TXV_Nombre_Noticia_AdapterEjercicios"
+                    android:layout_toRightOf="@+id/TXV_Nombre_Tema_AdapterEjercicios"/>
+
+                <TextView
+                    android:id="@+id/TXV_Nombre_Tipo_AdapterEjercicios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_below="@+id/TXV_Nombre_Noticia_AdapterEjercicios"
+                    android:layout_toRightOf="@+id/TXV_Separacion_AdapterEjercicios"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <Button
+                    android:id="@+id/IMV_Menu_Noticia_AdapterEjercicios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_more_vert_black_24dp"
+                    android:layout_toRightOf="@+id/nombre_publicacion"
+                    android:layout_gravity="right|center_vertical"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/TXV_Descripcion_AdapterEjercicios"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:layout_marginLeft="@dimen/DML_MargenFragPpal"/>
+        <TextView
+            android:id="@+id/TXV_URL_AdapterEjercicios"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:paddingBottom="@dimen/DML_PaddingBottomFragPpal"
+            android:paddingLeft="@dimen/DML_PaddingFragPpal"
+            android:paddingRight="@dimen/DML_PaddingFragPpal"
+            android:textColorLink="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/IMV_ImagenPublicacion_AdapterEjercicios"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="@dimen/DML_MargenFragPpal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/DML_PaddingFragPpal"
+            android:layout_below ="@+id/LY_Image_Pub_Adapter"
+            android:paddingRight="@dimen/DML_PaddingFragPpal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="20">
+                <TextView
+                    android:id="@+id/BTN_AbrirNoticia_AdapterEjercicios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:text="Ver el tema"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.asus.retamev2.reporteAdministrador">
+
+    <LinearLayout
+        android:id="@+id/LNY_BusquedaTemas_FRGReportesAdministrador"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/SCV_BuscarReportes_FRGReportesAdministrador"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="15"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/LNY_BusquedaTemas_FRGTemasAdministrador">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RCV_ListarReportes_FRGReportesAdministrador"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>
